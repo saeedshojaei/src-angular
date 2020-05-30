@@ -1,10 +1,7 @@
-// template
+// html
 (keypress)="numberOnly($event)"
 
-
-
-
-// ts code
+// ts
 numberOnly(event): boolean {
 	const charCode = (event.which) ? event.which : event.keyCode;
 	if (charCode > 31 && (charCode < 48 || charCode > 57)) {
