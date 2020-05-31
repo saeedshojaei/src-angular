@@ -1,9 +1,28 @@
-console.log('hello world');
-console.log('hello2')
+---------<< toturial angular >>--------
+https://auth0.com/blog/real-world-angular-series-part-6/
 
+
+// ts
 selectItem(e) {
 		this.items[e] = !this.items[e];
 	}
+// html
+<nb-card class="whiteBox col-sm-3" (click)="selectItem(0)" [class.active]="items[0]">
+                            <nb-card-body>
+                                <h6>گزارش دهنده</h6>
+                                <p>کاربری با نقش "گزارش دهنده" دارای دسترسی هایی است که به شرح زیر است:</p>
+                                <ul>
+                                    <li>دسترسی به پنل فلان</li>
+                                    <li>دسترسی به دانلود فلان</li>
+                                    <li>توانایی دانلود اطلاعات فلان</li>
+                                </ul>
+                                <div class="whiteBox-bottom">
+                                    <button nbButton hero
+                                        fullWidth>{{items[0] ? 'دسترسی انتخاب شد' : 'افزودن دسترسی'}}</button>
+                                    <span>لغو دسترسی</span>
+                                </div>
+                            </nb-card-body>
+                        </nb-card>
 
 // function for delete keys not select or null
 // get 1 arguments which instanceForm 
