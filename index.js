@@ -3,6 +3,7 @@ https://auth0.com/blog/real-world-angular-series-part-6/
 
 
 // ts
+items = [false, false, false, false];
 selectItem(e) {
 		this.items[e] = !this.items[e];
 	}
