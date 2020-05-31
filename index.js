@@ -1,7 +1,7 @@
 ---------<< toturial angular >>--------
 https://auth0.com/blog/real-world-angular-series-part-6/
 
-
+// change class when select {
 // ts
 items = [false, false, false, false];
 selectItem(e) {
@@ -24,8 +24,9 @@ selectItem(e) {
                                 </div>
                             </nb-card-body>
                         </nb-card>
+// }
 
-// function for delete keys not select or null
+// function for delete keys not select or null {
 // get 1 arguments which instanceForm 
 	removeEmpty(obj) {
 		Object.keys(obj).forEach( (key) =>{
@@ -41,9 +42,8 @@ selectItem(e) {
 			else if (!obj[key]) delete obj[key]
 		});
 	}
-
-// set as function removeEmpty()
-
+// }
+// set as function removeEmpty() {
 	// for (const item in instanceForm) {
 		// 	if (!instanceForm[item]) {
 		// 		delete instanceForm[item];
@@ -61,6 +61,6 @@ selectItem(e) {
 		// if (!Object.keys(instanceForm.address).length) {
 		// 	delete instanceForm.address;
 		// }
-
+// }
 
 
