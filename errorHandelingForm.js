@@ -1,3 +1,4 @@
+// sendForm and handeling data errors {
 sendForm() {
 	const form = this.form.value;
 	const instanceForm = {
@@ -31,11 +32,11 @@ sendForm() {
 	}
 	);
 }
+// }
 
-// disable input when select is enable
+// disable input when select is enable {
 // html
-<nb-select placeholder="{{'generic.provincePlaceholder' | translate}}" fullWidth [disabled]="!provinces"
-                                   
+<nb-select placeholder="{{'generic.provincePlaceholder' | translate}}" fullWidth [disabled]="!provinces"                                  
 dir="rtl" id="inputProvince" hero formControlName="provinceId"
 [status]="(f('address.provinceId').invalid || f('address.provinceId').errors) ? 'danger' : 'basic'"
 (selectedChange)="getCities($event)">
@@ -47,3 +48,9 @@ dir="rtl" id="inputProvince" hero formControlName="provinceId"
 ::ng-deep .nb-theme-default nb-select.appearance-hero .select-button:disabled {
     background-color: #a29494;
    }
+// }
+
+
+
+
+
