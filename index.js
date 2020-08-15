@@ -1,5 +1,7 @@
 ---------<< toturial angular >>--------
 https://auth0.com/blog/real-world-angular-series-part-6/
+-----------<<pipe for avatar img>>---------
+https://codecraft.tv/courses/angular/pipes/custom-pipes/#_learning_objectives
 
 // change class when select {
 // ts
